@@ -1,0 +1,253 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: auto;
+}
+.body {
+    max-width: 1280px;
+    min-width: 350px;
+    background-color: #121212; /* Dark cosmic background */
+    color: #f0f0f0;
+    font-family: 'Roboto', sans-serif;
+}
+/* PRE TAG STYLE */
+pre{
+    border:thin solid gainsboro;
+    border-radius: 1em;
+    background-color: ghostwhite;
+    margin: 1em;
+    padding: 1em;
+    color: rgb(44, 44, 44);
+    white-space: pre-wrap;       /* css-3 */
+    white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+    white-space: -pre-wrap;      /* Opera 4-6 */
+    white-space: -o-pre-wrap;    /* Opera 7 */
+    word-wrap: break-word;       /* Internet Explorer 5.5+ */
+}
+
+/* ************************************************** */
+
+a{
+    text-decoration: none !important;
+}
+
+a h1 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1.5rem;
+    color: #00ccff;
+    transition: color 0.3s ease;
+    margin: 0;
+}
+
+a h1:hover {
+    color: #00ff99;
+    text-shadow: 0 0 10px #00ccff;
+}
+
+/* Header */
+.navbar {
+    background-color: #1e1e1e !important;
+    border-bottom: 2px solid #00ccff;
+    padding: 1rem 2rem;
+}
+
+.navbar-nav .nav-link {
+    color: #00ccff !important;
+    text-transform: uppercase;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    padding: 0.75rem 1rem;
+    border-radius: 6px;
+}
+
+.navbar-nav .nav-link:hover {
+    background-color: #00ccff;
+    color: #121212 !important;
+    box-shadow: 0 0 12px #00ccff;
+    transform: scale(1.05);
+}
+
+.navbar-toggler {
+    background-color: #00ccff;
+    border: none;
+    border-radius: 5px;
+}
+.navbar-toggler-icon{
+    color: #cfd8dc !important;
+}
+
+/* 404 */
+
+.hero-img {
+    max-width: 1280px;
+    opacity: 0.8;
+}
+.error-title{
+    top: 20%; 
+    font-size: 4rem;
+    color: #121212;
+}
+.info-erro{
+    bottom: 20%;
+}
+.info-erro p{
+    font-size: 1.5rem;
+    color: #ffffffcc;
+    margin-bottom: 2rem;
+}
+.info-erro a {
+    padding: 0.8rem 2rem;
+    background-color: #00ff99;
+    color: #0d0d0d;
+    border-radius: 12px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+.info-erro a:hover {
+    background-color: #00ccff;
+    color: #0d0d0d;
+}
+
+/* Home PAGE */
+.banner-fandom img{
+    width: 100%;
+    height: auto;
+    border-radius: 0 0 10px 10px;
+    box-shadow: 0 0 20px #00ccff;
+}
+.cosmic-img img{
+    width: 80%;
+}
+.bg-fandom{
+    background-color: #0000ff;
+}
+
+/* Footer */
+.footer {
+    background: #0f1b2c;
+    color: #cfd8dc;
+    border-top: 2px solid #00ccff40;
+}
+
+.text-cyan {
+    color: #00ccff;
+}
+
+.footer-link {
+    color: #cfd8dc;
+    margin: 0 12px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-link:hover {
+    color: #00ff99;
+    text-decoration: underline;
+}
+
+.social-icon {
+    color: #00ccff;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+    color: #00ff99;
+}
+
+@media (max-width: 1080px) {
+    .navbar-nav .nav-link {
+        font-size: 0.9rem;
+        padding: 0.5rem 0.75rem;
+    }
+    .navbar-toggler {
+        padding: 0.5rem;
+    }
+}
+@media (max-width: 1280px){
+    .navbar-nav .nav-link {
+        font-size: 1.2rem;
+        padding: 0.5rem 0.5rem;
+    }
+    a h1 {
+        font-size: 2rem;
+    }
+    .navbar-toggler {
+        padding: 0.5rem;
+    }
+}
+
+
+/* ANIMACIÖN */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+        100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-60px);
+    }
+        100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(60px);
+    }
+        100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.animated {
+    opacity: 0;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-out;
+}
+
+/* Utilitários com delays */
+.fade-in-up {
+    animation: fadeInUp 1s ease forwards;
+}
+
+.slide-in-left {
+    animation: slideInLeft 1s ease forwards;
+}
+
+.slide-in-right {
+    animation: slideInRight 1s ease forwards;
+}
+
+.delay-1 {
+    animation-delay: 0.3s;
+}
+.delay-2 {
+    animation-delay: 0.6s;
+}
+.delay-3 {
+    animation-delay: 0.9s;
+}
+.delay-4 {
+    animation-delay: 1.2s;
+}
+.delay-5 {
+    animation-delay: 1.5s;
+}
+.delay-6 {
+    animation-delay: 1.8s;
+}
