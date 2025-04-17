@@ -1,6 +1,7 @@
 <?php 
 
-require 'includes/data/product.php';
+// require 'includes/data/product.php';
+require_once 'includes/controllers/functions.php';
 
 
 $sections = [
@@ -16,12 +17,16 @@ $sections = [
         "title" => "About Us",
         "content" => "Essa é a página sobre nós. Aqui você pode encontrar informações sobre o site e suas funcionalidades. Navegue pelo menu para acessar outras páginas."
     ],
-    "catalog" => [
+    "catalogo_completo" => [
         "title" => "Catálogo de produtos",
         "content" => "Essa é a página de catálogo de produtos. Aqui você pode encontrar informações sobre os produtos disponíveis. Navegue pelo menu para acessar outras páginas."
     ],
     "comics" => [
         "title" => "Universos Cosmic",
+        "content" => "Essa é a página de produto. Aqui você pode encontrar informações sobre o produto."
+    ],
+    "producto" => [
+        "title" => "Produto",
         "content" => "Essa é a página de produto. Aqui você pode encontrar informações sobre o produto."
     ],
 ];
@@ -37,12 +42,14 @@ $section = isset($_GET['section']) ? $_GET['section'] : 'home';
 $universo = isset($_GET['uni']) ? $_GET['uni'] : null;
 
 if ($universo){
-    $catalog = $product[$universo];
+    // $catalog = $product[$universo];
+    $catalogo = catalogo_personaje($universo);
 } else{
-    $catalog = [];
-    foreach ($product as $verse) {
-        $catalog = array_merge($catalog, $verse);
-    }
+    // $catalog = [];
+    // foreach ($product as $verse) {
+    //     $catalog = array_merge($catalog, $verse);
+    // }
+    $catalogo = catalogo_completo();
 }
 
 // Verificamos se a seção existe no array de seções

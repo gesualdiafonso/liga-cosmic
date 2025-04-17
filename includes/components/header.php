@@ -22,7 +22,7 @@ $logo = "LigaVersus Cosmic";
                         <a class="nav-link active" href="index.php?section=about">Sobre</a>
                     </li>
                     <li class="nav-item">
-                        <a  class="nav-link active"href="index.php?section=catalog">Catalogo</a>
+                        <a  class="nav-link active"href="index.php?section=catalogo_completo">Catalogo</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link active" href="index.php?section=comics&uni=batman">Batman</a>

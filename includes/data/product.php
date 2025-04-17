@@ -260,4 +260,6 @@ $product = [
     ]
 ];
 
+$object = json_encode($product, JSON_PRETTY_PRINT);
+
 ?>

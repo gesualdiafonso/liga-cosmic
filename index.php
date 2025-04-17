@@ -1,6 +1,10 @@
 <?php
 
 require 'router.php';
+require_once 'includes/controllers/functions.php';
+
+// echo catalogo_completo();
+
 
 ?>
 
@@ -12,7 +16,7 @@ require 'router.php';
 
     <title><?= $sections[$views]['title'] ?></title>
     <meta name="description" content="<?= $sections[$views]['content'] ?>">
-    <meta name="keywords" content="<?= $sections[$views]['meta_keywords'] ?>">
+    
     <meta name="author" content="Cosmic Comics">
     <meta name="robots" content="index, follow">
 
