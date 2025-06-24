@@ -76,6 +76,9 @@ This is a personal learning and portfolio project. However, feel free to open is
 Afonso Gesualdi
 Web Developer | Designer | Brand Management and Digital Marketing
 
+[![Portfolio](https://img.shields.io/badge/PORTFOLIO-green?style=for-the-badge)](https://afonsodev.vercel.app/)
+[![LinkedIn](https://img.shields.io/badge/LINKEDIN-blue?style=for-the-linkedin)](https://afonsodev.vercel.app/](https://www.linkedin.com/in/afonso-gesualdi-aaa9bb244/))
+
 ⸻
 
 🖤 Made with love — and lots of superheroes!
